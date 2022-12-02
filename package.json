@@ -1,0 +1,21 @@
+{
+  "name": "caf-utilities",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "comma-number": "^2.1.0",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "humanize-duration": "^3.27.3",
+    "milliseconds": "^1.0.3",
+    "moment": "^2.29.4",
+    "quickmongo": "^5.1.2"
+  }
+}
