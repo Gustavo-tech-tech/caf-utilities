@@ -41,7 +41,7 @@ module.exports = {
                 }
             )
             .setFooter({ text: `ID: ${message.author.id}` })
-            .setTimestamp()
+            .setTimestamp(message.createdTimestamp)
 
         if (message.attachments.size >= 1) {
             message.attachments.forEach(function(attachment) {

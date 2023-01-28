@@ -16,6 +16,7 @@
     "humanize-duration": "^3.27.3",
     "milliseconds": "^1.0.3",
     "moment": "^2.29.4",
+    "quick.db": "^9.0.6",
     "quickmongo": "^5.1.2"
   }
 }

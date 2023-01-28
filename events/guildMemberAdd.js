@@ -21,17 +21,13 @@ module.exports = {
                 new Discord.MessageButton()
                     .setLabel("Leia as regras")
                     .setStyle("LINK")
-                    .setURL("https://discord.com/channels/802594126994210857/802594127363440659"),
-                new Discord.MessageButton()
-                    .setLabel("Registre-se")
-                    .setStyle("LINK")
-                    .setURL("https://discord.com/channels/802594126994210857/803372496170647562")
+                    .setURL("https://discord.com/channels/802594126994210857/802594127363440659")
             )
 
         // Mensagem de entrada
         const welcomer = new Discord.MessageEmbed()
             .setAuthor({ name: member.user.tag, iconURL: member.user.displayAvatarURL({ format: "png", dynamic: true }) })
-            .setDescription("Seja bem-vindo(a) ao **Star's Café**. <a:SC_Butterfly:874042949921562674>\nQuer digitar no <#802594127828615242>? Registre-se em <#803372496170647562>!")
+            .setDescription("Seja bem-vindo(a) ao **Star's Café**. Fique à vontade para conversar no <#802594127828615242> ou participar de nossas calls. Esperemos que aproveite sua estadia!")
             .setColor("RANDOM")
             .setThumbnail(thumbnail)
 

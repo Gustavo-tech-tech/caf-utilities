@@ -11,7 +11,10 @@ module.exports = {
         let cargo = message.member.roles.cache
         let cargos_bypass = [
             "935035986654670858",
-            "803473482054238220"
+            "803473482054238220",
+            "904032675311013948",
+            "904032668042285147",
+            "904031410338283652"
         ]
 
         if (!message.member.permissions.has("MANAGE_MESSAGES") && !cargos_bypass.some((id) => cargo.has(id))) {
@@ -52,7 +55,7 @@ module.exports = {
             const snipe = new Discord.MessageEmbed()
                 .setAuthor({ name: msg.author.tag, iconURL: msg.author.displayAvatarURL({ format: "png", dynamic: true }) })
                 .setDescription(msg.content)
-                .setColor("#f0cc76")
+                .setColor("RANDOM")
                 .setFooter({ text: `ID: ${msg.author.id}` })
                 .setTimestamp(msg.timestamp);
 

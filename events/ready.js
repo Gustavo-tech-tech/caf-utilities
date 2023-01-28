@@ -55,14 +55,24 @@ module.exports = {
         }
 
         // Status custom para o bot
-        client.user.setActivity(`Star's Café | ${process.env.PREFIX}ajuda`, {
-            type: "PLAYING",
-            status: "online"
-        })
+        const atividades = [
+            "Star's Café 🖤 | -help",
+            "discord.gg/amizade ☕"
+        ];
 
-        let guildId = "802594126994210857";
+        setInterval(() => {
+            const randomIndex = Math.floor(Math.random() * atividades.length);
+            const activity = atividades[randomIndex]
+
+            client.user.setActivity(activity, {
+                type: "PLAYING",
+                status: "online"
+            })
+        }, 600000);
 
         // Contador de membros no servidor e em calls na sala de voz
+        let guildId = "802594126994210857";
+
         setInterval(function () {
             const membros = client.guilds.cache.get(guildId).memberCount;
             const voiceChannels = client.guilds.cache.get(guildId).channels.cache.filter(channel => channel.type === "GUILD_VOICE");

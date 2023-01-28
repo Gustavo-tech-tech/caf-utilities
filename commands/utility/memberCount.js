@@ -23,8 +23,8 @@ module.exports = {
             .setColor("#ff69b4")
             .addFields(
                 {
-                    name: "<:Caf_IconCommunityPublic:966543910472134667> Contagem geral:",
-                    value: `ﾠ<:Caf_IconMemberList:911485073868587028> Membros: **${commaNumber(membros)}**\nﾠ<:Caf_IconVoiceChannel:950256027717226496> Total em call: **${commaNumber(count)}**`
+                    name: "<:Caf_IconRichPresence:910585230061096960> Contagem geral:",
+                    value: `ﾠ<:Caf_IconUser:952043105480224848> Membros: **${commaNumber(membros)}**\nﾠ<:Caf_IconMicrophoneUnmuted:952093097649647656> Total em call: **${commaNumber(count)}**`
                 }
             )
             .setFooter({ text: message.author.username, iconURL: message.author.displayAvatarURL({ format: "png", dynamic: true }) })

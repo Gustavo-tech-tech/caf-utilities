@@ -41,15 +41,15 @@ module.exports = {
             .setAuthor({ name: `${message.guild.me.displayName} - Lista de comandos`, iconURL: client.user.displayAvatarURL({ format: "png", dynamic: true }) })
             .setDescription("**Seja bem-vindo(a) a minha lista de comandos.**")
             .setColor("#ff69b4")
-            .setThumbnail("https://cdn.discordapp.com/attachments/971560640999206974/972975510365814814/icons-sobre.png")
+            .setThumbnail("https://media.discordapp.net/attachments/860018435664642058/1068761077661319209/icons8-coffee-to-go-96.png")
             .addFields(
                 {
                     name: "<:Caf_IconLink:950524772184358954> Links importantes:",
-                    value: "<:Caf_PinkArrowRight:954799263966179359> [Vote pela comunidade no top.gg](https://top.gg/servers/802594126994210857/vote)"
+                    value: "<:Caf_PinkArrowRight:954799263966179359> [Vote pelo servidor no top.gg](https://top.gg/servers/802594126994210857/vote)"
                 },
                 {
                     name: "<:Caf_IconSearch:910590982297378836> Opções:",
-                    value: "<:Caf_PinkNumberOne:953361023644094494> Utilidades\n<:Caf_PinkNumberTwo:953360676586389564> Atividade e afins\n<:Caf_PinkNumberThree:953360748069920869> Gerenciamento"
+                    value: "<:Caf_PinkNumberOne:953361023644094494> Utilidades\n<:Caf_PinkNumberTwo:953360676586389564> Atividade e afins\n<:Caf_PinkNumberThree:953360748069920869> Comandos VIP"
                 })
             .setFooter({ text: `Requisitado por: ${message.author.username}`, iconURL: message.author.displayAvatarURL({ format: "png", dynamic: true }) })
 
@@ -69,7 +69,7 @@ module.exports = {
                             .addFields(
                                 {
                                     name: "<:Caf_IconInfo:952090770075189258> Comandos principais:",
-                                    value: `<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}votar - Vote pelo servidor\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}contador - Veja a contagem de membros do servidor\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}editsnipe - Veja a última mensagem editada\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}snipe - Veja a última mensagem apagada`
+                                    value: `<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}votar - Vote pelo servidor\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}contador - Veja a contagem de membros do servidor`
                                 },
                                 {
                                     name: "<:Caf_IconRichPresence:910585230061096960> Comandos:",
@@ -95,13 +95,21 @@ module.exports = {
 
                     case "terceiro_botao":
                         const terceira_pagina = new Discord.MessageEmbed()
-                            .setAuthor({ name: `${msg.guild.me.displayName} - Gerenciamento`, iconURL: client.user.displayAvatarURL({ format: "png", dynamic: true }) })
+                            .setAuthor({ name: `${msg.guild.me.displayName} - Comandos VIP [Novo]`, iconURL: client.user.displayAvatarURL({ format: "png", dynamic: true }) })
                             .setColor("#ff69b4")
-                            .setThumbnail("https://cdn.discordapp.com/attachments/971560640999206974/972975510722314250/icons-configuracoes.png")
+                            .setThumbnail("https://media.discordapp.net/attachments/860018435664642058/1068760467583012884/icons8-fairytale-96.png")
                             .addFields(
                                 {
-                                    name: "<:Caf_IconRichPresence:910585230061096960> Comandos:",
-                                    value: `<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}convite - Obtenha meu link de convite\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}eval - Avalia um código\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}rmsg - Reseta as mensagens dos usuários\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}rtempo - Reseta o tempo em call de todos os usuários`
+                                    name: "<:Caf_IconInfo:952090770075189258> Comandos principais:",
+                                    value: `<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}snipe - Veja a última mensagem excluída\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}editsnipe - Veja a última mensagem editada`
+                                },
+                                {
+                                    name: ":cupcake: Comidas:",
+                                    value: `<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}bolo - Ofereço um bolinho\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}cookie - Ofereço um biscoitinho\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}cupcake - Ofereço um cupcake\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}donut - Ofereço um donut\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}panqueca - Ofereço panquecas\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}pao - Ofereço pães\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}pudim - Ofereço um pudim\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}sorvete - Ofereço um sorvetinho`
+                                },
+                                {
+                                    name: ":cocktail: Bebidas:",
+                                    value: `<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}cafe - Ofereço um café\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}cha - Ofereço um chá\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}chocolate - Ofereço um chocolate quente\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}milk - Ofereço um copo de leite fresco\n<:Caf_PinkArrowRight:954799263966179359> ${process.env.PREFIX}refri - Ofereço um refrigerante`
                                 })
 
                         msg.edit({ embeds: [terceira_pagina], components: [row1] })

@@ -42,7 +42,7 @@ module.exports = {
                 }
             )
             .setFooter({ text: `ID: ${newMessage.author.id}` })
-            .setTimestamp();
+            .setTimestamp((oldMessage, newMessage).createdTimestamp);
 
         if (newMessage.attachments.size > 0) {
             editLogger.addFields(

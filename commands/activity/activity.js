@@ -92,7 +92,7 @@ module.exports = {
                     },
                     {
                         name: "<:Caf_IconRichPresence:910585230061096960> Benefícios:",
-                        value: "ﾠ<:Caf_GreenArrowRight:954802049223098450> Permissão de enviar imagens no <#802594127828615242>\nﾠ<:Caf_GreenArrowRight:954802049223098450> Acesso a Sala VIP na seção geral"
+                        value: "ﾠ<:Caf_GreenArrowRight:954802049223098450> Tag especial destacada: <@&934663182356725770>\nﾠ<:Caf_GreenArrowRight:954802049223098450> Ícone de cargo chiquérrimo ao lado do nick\nﾠ<:Caf_GreenArrowRight:954802049223098450> Permissão de enviar imagens no <#802594127828615242>\nﾠ<:Caf_GreenArrowRight:954802049223098450> Acesso às cores VIPs\nﾠ<:Caf_GreenArrowRight:954802049223098450> Acesso a Sala VIP na seção geral\nﾠ<:Caf_GreenArrowRight:954802049223098450> Comando de avatar personalizado"
                     })
 
             message.channel.send({ embeds: [activityEmbed2] }).then(message => {

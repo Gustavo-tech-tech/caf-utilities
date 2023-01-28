@@ -14,7 +14,7 @@ module.exports = {
                 name: `Vote pelo ${message.guild.name}`,
                 icon_url: message.guild.iconURL({ format: "png", dynamic: true })
             },
-            description: "Todos os dias membros de vários lugares do Brasil entram no servidor por meio dos votos e bumps. Seja um desses também e nos ajude a crescer ainda mais!\n\n` 1 ` [discordhome.com](https://discordhome.com/server/amizade#vote)\n` 2 ` [top.gg](https://top.gg/servers/802594126994210857/vote)\n` 3 ` [discords.com](https://discords.com/servers/802594126994210857/upvote)\n` 4 ` [discordservers.com](https://discordservers.com/bump/802594126994210857)\n` 5 ` [discord.me](https://discord.me/dashboard)\n` 6 ` [disboard.org](https://disboard.org/pt-pt/server/802594126994210857): `/bump`",
+            description: "Todos os dias membros de vários lugares do Brasil entram no servidor por meio dos votos e bumps. Seja um desses também e nos ajude a crescer ainda mais! <:Caf_CuteHeart:952100117870149632>\n\n` 1 ` [discordhome.com](https://discordhome.com/server/amizade#vote)\n` 2 ` [top.gg](https://top.gg/servers/802594126994210857/vote)\n` 3 ` [discords.com](https://discords.com/servers/802594126994210857/upvote)\n` 4 ` [discordservers.com](https://discordservers.com/bump/802594126994210857)\n` 5 ` [disboard.org](https://disboard.org/pt-pt/review/create/802594126994210857): `/bump`",
             color: "#ff69b4",
             footer: {
                 text: `Requisitado por: ${message.author.username}`,
