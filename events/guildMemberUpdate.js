@@ -1,4 +1,5 @@
 const Discord = require("discord.js");
+const humanizeDuration = require("humanize-duration");
 const moment = require("moment");
 
 moment.locale("pt-br");
