@@ -168,7 +168,7 @@ module.exports = {
             .setDescription(`**${mensagemRandom}**`)
             .setColor("#ffbf8c")
 
-            client.channels.cache.get("1001359643752284251").send({ embeds: [autofeed], components: [row] }).then(msg => {
+            client.channels.cache.get("802594127828615242").send({ embeds: [autofeed], components: [row] }).then(msg => {
                 setTimeout(() => msg.delete(), 30000)
             })
         }, 3600000)
