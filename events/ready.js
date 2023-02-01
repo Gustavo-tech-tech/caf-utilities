@@ -94,6 +94,19 @@ module.exports = {
 
         }, 300000)
 
+        // Cargo mudando de cor
+        const guild = client.guilds.cache.get("802594126994210857");
+
+        const colors = "RANDOM";
+        const role = await guild.roles.fetch("904032675311013948");
+
+        setInterval(() => {
+            role.edit({
+                color: colors
+            })
+        }, 1200000);
+
+
         // Contador de membros no tópico do canal
         setInterval(function () {
             let channel = client.channels.cache.get("802594127828615242");
@@ -120,5 +133,44 @@ module.exports = {
         .setFooter({ text: client.guilds.cache.get(guildId).name, iconURL: client.guilds.cache.get(guildId).iconURL({ format: "png", dynamic: true }) })
 
         client.channels.cache.get("912850829009117254").send({ embeds: [ready] })
+
+        // Sistema de mensagem temporária
+        const row = new Discord.MessageActionRow()
+            .addComponents(
+                new Discord.MessageButton()
+                    .setCustomId("mensagem_automatica")
+                    .setLabel("Mensagem automática")
+                    .setStyle("SECONDARY")
+                    .setDisabled(true)
+            )
+
+        setInterval(() => {
+            const mensagens = [
+                "Seja membro ativo enviando 2500 mensagens no chat ou 60h desmutado!",
+                "Quer ajudar a deixar o servidor melhor do que já é? <#917568754458710046>",
+                "Você sabia que temos eventos semanais em call? <#902977574228070430>",
+                "Você sabia que os membros ativos recebem 3 benefícios VIP?",
+                "Você sabia que temos um canal de <#1061360485192171690>?",
+                "Você sabia que temos canais de jornalismo?",
+                "Você sabia que temos Passatempo aos sábados em call? <#1059694177929150514>",
+                "Precisa denunciar alguém quebrando as regras? <#879062961874939954>",
+                "Ajude na divulgação do servidor votando aqui: [top.gg](https://top.gg/servers/802594126994210857/vote)",
+                "Você sabia que boosters tem comando de avatar personalizado?",
+                "Se sua mensagem for bloqueada, não tente ultrapassar, é contra as regras",
+                "Você sabia que o registro pode ser feito em: <id:customize>?",
+                "Você sabia que você pode acumular tempo em call? `-tempo`",
+                "Veja sua atividade no servidor usando: `-ativo`"
+            ];
+
+            const mensagemRandom = mensagens[Math.floor(Math.random() * mensagens.length)];
+
+            const autofeed = new Discord.MessageEmbed()
+            .setDescription(`**${mensagemRandom}**`)
+            .setColor("#ffbf8c")
+
+            client.channels.cache.get("1001359643752284251").send({ embeds: [autofeed], components: [row] }).then(msg => {
+                setTimeout(() => msg.delete(), 30000)
+            })
+        }, 3600000)
     }
 }
