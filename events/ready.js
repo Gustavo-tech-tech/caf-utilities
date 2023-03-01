@@ -61,7 +61,7 @@ module.exports = {
             "Never change what makes you rare.",
             "The best moments are that ones we spend together.",
             "Aky is the best artist.",
-            "kyce is the best "
+            "kyce is a good hearer."
         ];
 
         i = 0;
