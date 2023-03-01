@@ -56,19 +56,20 @@ module.exports = {
 
         // Status custom para o bot
         const atividades = [
-            "Star's Café 🖤 | -help",
-            "discord.gg/amizade ☕"
+            "Star's Café 💙 | -help",
+            "discord.gg/amizade ☕",
+            "Never change what makes you rare.",
+            "The best moments are that ones we spend together.",
+            "Aky is the best artist.",
+            "kyce is the best "
         ];
 
-        setInterval(() => {
-            const randomIndex = Math.floor(Math.random() * atividades.length);
-            const activity = atividades[randomIndex]
+        i = 0;
 
-            client.user.setActivity(activity, {
-                type: "PLAYING",
-                status: "online"
-            })
-        }, 600000);
+        setInterval(() => client.user.setActivity(`${atividades[i++ % atividades.length]}`, {
+            type: "PLAYING",
+            status: "online"
+        }), 600000)
 
         // Contador de membros no servidor e em calls na sala de voz
         let guildId = "802594126994210857";
@@ -104,7 +105,7 @@ module.exports = {
             role.edit({
                 color: colors
             })
-        }, 1200000);
+        }, 900000);
 
 
         // Contador de membros no tópico do canal
@@ -146,20 +147,22 @@ module.exports = {
 
         setInterval(() => {
             const mensagens = [
-                "Seja membro ativo enviando 2500 mensagens no chat ou 60h desmutado!",
+                "Seja membro ativo enviando 2.500 mensagens no chat-geral ou gastando 60h desmutado em calls!",
                 "Quer ajudar a deixar o servidor melhor do que já é? <#917568754458710046>",
-                "Você sabia que temos eventos semanais em call? <#902977574228070430>",
-                "Você sabia que os membros ativos recebem 3 benefícios VIP?",
-                "Você sabia que temos um canal de <#1061360485192171690>?",
-                "Você sabia que temos canais de jornalismo?",
-                "Você sabia que temos Passatempo aos sábados em call? <#1059694177929150514>",
+                "Você sabia que temos VIP a partir de R$ 5,00? <#1062856962909425745>",
+                "Deixe seu feedback sobre o servidor e o conteúdo: <#1061360485192171690>?",
+                "Você sabia que agora temos Sistema VIP? <#1062856962909425745>",
                 "Precisa denunciar alguém quebrando as regras? <#879062961874939954>",
                 "Ajude na divulgação do servidor votando aqui: [top.gg](https://top.gg/servers/802594126994210857/vote)",
-                "Você sabia que boosters tem comando de avatar personalizado?",
+                "Ao digitar `-avatar`, você pode ter a proesa de ter mensagem personalizada VIP, Membro Ativo ou Booster!",
                 "Se sua mensagem for bloqueada, não tente ultrapassar, é contra as regras",
                 "Você sabia que o registro pode ser feito em: <id:customize>?",
+                "Você sabia que ao digitar `discord.gg/amizade` no seu Status, você ganha uma tag especial automaticamente?",
                 "Você sabia que você pode acumular tempo em call? `-tempo`",
-                "Veja sua atividade no servidor usando: `-ativo`"
+                "Veja sua atividade no servidor usando: `-ativo`",
+                "Você sabia que na compra de um VIP Café Supremo sendo booster, você recebe 10% de desconto? <#901871779360944219>",
+                "Personalize seu nick e deixe ele bem estiloso com uma das: <#803372496170647562>",
+                "Fique informado das últimas mudanças na comunidade: <#802594127363440658>"
             ];
 
             const mensagemRandom = mensagens[Math.floor(Math.random() * mensagens.length)];
